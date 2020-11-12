@@ -2,12 +2,12 @@
 
 int main(){
 
-    int n = 0;
+    static unsigned int n;
     std::cin>>n;
 
     class queue Q(n);
     int result = 0;
-    int choice = 0;
+    unsigned int choice = 0;
 
 while(true){
     std::cout<<"\n1. ENQUEUE\n";
