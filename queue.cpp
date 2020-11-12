@@ -8,9 +8,8 @@ int main(){
     class queue Q(n);
     int result = 0;
     int choice = 0;
-    bool run = true;
 
-while(run){
+while(true){
     std::cout<<"\n1. ENQUEUE\n";
     std::cout<<"2. DEQUEUE\n";
     std::cout<<"3. DISPLAY\n";
@@ -32,8 +31,10 @@ while(run){
         Q.display();
         break;
     case 4:
-        run = false;
-        break;    
+        return 0;
+    default:
+        std::cout<<"INVALID CHOICE! TRY AGAIN!";
+        break;
     }
 
     
